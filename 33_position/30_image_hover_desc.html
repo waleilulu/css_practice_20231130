@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 10. 請試著加入 css  */
+
+        figcaption {
+            background-color: white;
+            height: 125px;
+            top: -140px;
+            position: relative;
+            display: none;
+            opacity: 0.5
+        }
+
+        img, figcaption {
+            width: 600px;
+        }
+
+        /*      讓文字在滑鼠經過時才顯示 */
+        /* 當滑鼠經過img的時候讓figcaption顯現
+         當滑鼠經過figure的時候讓figcaption顯現 */
+        figure:hover>figcaption {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    2023.12.04
+    非唯一解，只要能夠出現類似效果即可
+    1. 圖片寬度改變
+    2. 文字隱藏
+    3. 文字想辦法「疊」到圖片上
+    4. 滑鼠經過的討論
+    5. 文字寬度改變
+
+
+    <figure class="desc">
+        <img src="img/sunny.JPG">
+        <figcaption class="desc">千陽號海上行</figcaption>
+    </figure>
+
+</body>
+
+</html>

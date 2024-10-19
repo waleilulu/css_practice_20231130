@@ -1,0 +1,30 @@
+<!-- 屬性選擇器(書:7-15) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 開頭(^)、包含(*)、結尾($) */
+        a[href*="tw"] {
+            background-color: palevioletred
+        }
+
+        /* hover代表指標移到但尚未點選元素 */
+        a:hover {
+            background-color: khaki;
+            color: darkcyan
+        }
+    </style>
+</head>
+
+<body>
+    <h3>透過元素屬性來選擇元素</h3>
+    <p><a href="https://www.google.com/">Google</a></p>
+    <p><a href="https://tw.yahoo.com/">Yahoo</a></p>
+    <p><a href="https://www.facebook.com/">Facebook</a></p>
+
+</body>
+
+</html>

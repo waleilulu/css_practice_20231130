@@ -1,0 +1,105 @@
+<!-- 以下為筆記，如果需要使用請註解掉其他 -->
+
+
+
+<!-- 行內套用 (Inline stylesheet)，請盡量不要採取行內樣式 -->
+<!-- 寫在body裡 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+</head>
+<body>
+        <button style="
+        padding: 6px 16px;
+        border: 1px solid #446d88;
+        background: #58a linear-gradient(#77a0bb, #58a);
+        border-radius: 4px;
+        box-shadow: 0 1px 5px gray;
+        color: white;
+        text-shadow: 0 -1px 1px #335166;
+        font-size: 20px;
+        line-height: 30px;">點擊我</button>
+ 
+</body>
+</html>
+
+
+
+<!-- 內聯樣式（Internal Stylesheet） -->
+<!-- 寫在head->style裡 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        button {
+            padding: 6px 16px;
+            border: 1px solid #446d88;
+            background: #58a linear-gradient(#77a0bb, #58a);
+            border-radius: 4px;
+            box-shadow: 0 1px 5px gray;
+            color: white;
+            text-shadow: 0 -1px 1px #335166;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button>點擊我</button>
+</body>
+</html>
+
+
+
+<!-- 外部樣式連接 (External Link) -->
+<!-- 崁入在CSS寫的內容 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="12_02_ch1_1.css">
+    </style>
+</head>
+<body>
+    <button>點擊我</button>
+</body>
+</html>
+
+
+<!-- 外部樣式連接 (External Link) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="12_02_ch1_3.css" type="text/css">
+
+</head>
+
+<body>
+    <h1>皮卡丘</h1>
+</body>
+
+</html>
+
+
+<!-- 外部樣式連接 (External Link) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 若要匯入多個css檔案，只要多寫幾個@import url();指令就可以了 */
+        @import url(12_02_ch1_3.css);
+    </style>
+</head>
+
+<body>
+    <h1>皮卡丘</h1>
+</body>
+
+</html>

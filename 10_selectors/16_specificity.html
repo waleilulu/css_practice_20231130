@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Specificity</title>
+
+    <!-- 試著在這裡設定底下css樣式，##每一個步驟執行完以後，請先查看畫面顏色的變化!! -->
+    <style>
+        body{width: 250px;}
+        /* 10. 使用 tag name 挑選元素並設定背景底色 */
+        h1 {background-color: rgb(0, 255, 136)!important}
+
+        /* 20. 使用 .class 挑選元素並設定背景底色 */
+        .pokemon {background-color: yellow}
+        .EEIT73 {text-decoration: underline}
+
+        /* 30. 使用 #id 挑選元素並設定背景底色 */
+        #pikachu{background-color: purple}
+
+        /* 優先權:!important(不管放在哪都是最高級) > 寫在元素裡面的樣式 inline style(查看26.) > #id(查看17.) > .class(查看14.) > h標籤(查看11.) */
+    
+    </style>
+
+</head>
+
+<body>
+    <h1 style="background-color: lightgreen;" class="pokemon MSIT56 APPLE" id="pikachu">皮卡丘</h1>
+    <h1 class="pokemon MSIT56">貓老大</h1>
+    <h1 class="pokemon MSIT56">比比鳥</h1>
+
+    <h1 class="digimon EEIT73">亞古獸</h1>
+    <h1 class="digimon">天使獸</h1>
+    <h1 class="digimon EEIT73">戰鬥暴龍獸</h1>
+
+    <h4>CSS Specificity</h4>
+    <p><a href='https://www.w3schools.com/css/css_specificity.asp'>https://www.w3schools.com/css/css_specificity.asp</a>
+    </p>
+    <hr>
+    <!-- 40. 透過元素的style屬性設定背景底色 -->
+
+</body>
+
+</html>

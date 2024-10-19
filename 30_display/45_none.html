@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>display:none</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        
+        /* 10. 撰寫當滑鼠經過 id 為reddiv開頭的元素，把背景顏色改為黃色*/
+        div[id^="reddiv"]:hover {
+            background-color: yellow;
+        }
+        /* 20. 挑選 #reddiv_B 設定 display:none */
+        #reddiv_B {display: none;}
+
+        /* 25. 挑選 #reddiv_C 設定 visibility:hidden */
+        #reddiv_C {visibility:hidden;}
+        /* 30. 撰寫當滑鼠經過 #reddiv_B 或 #reddiv_C 時，加上 visibility: visible，看看是否有效果? 
+        A: 沒有效果 */
+        #reddiv_C:hover{visibility: visible;}
+
+      
+    </style>
+</head>
+
+<body>
+    <pre>
+        2023/12/01
+        1.無法::hover 經過一個不存在的元素
+        2.display: none和 visibility: hidden；的差異?
+            要透過「父曾/父元素」觀察，display: none；      的空間(寬高)沒保留
+            要透過「父曾/父元素」觀察，visibility: hidden； 的空間(寬高)會保留
+
+    </pre>
+
+    <h3> display:block 區塊，元素的寬度預設會撐到最大。</h3>
+    <div class="demo">
+        <div id="reddiv_A">Red</div>
+        <div id="greendiv_A">Green</div>
+        <div id="bluediv_A">Blue</div>
+    </div>
+
+    <hr>
+
+    <h3> display:none 直譯：沒有東西在這裡</h3>
+    <div class="demo">
+        <div id="reddiv_B">Red</div>
+        <div id="greendiv_B">Green</div>
+        <div id="bluediv_B">Blue</div>
+    </div>
+
+    <h3> visibility:hidden 直譯：藏起來</h3>
+    <div class="demo">
+        <div id="reddiv_C">Red</div>
+        <div id="greendiv_C">Green</div>
+        <div id="bluediv_C">Blue</div>
+    </div>
+
+</body>
+
+</html>

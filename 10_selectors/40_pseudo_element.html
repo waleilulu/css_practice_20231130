@@ -1,0 +1,30 @@
+<!-- 虛擬元素(書:7-19) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <Style>
+        /* 在p之後有... */
+        p::after {
+            content: "...繼續閱讀";
+            background-color: hotpink;
+        }
+
+        /* 在#question前面有 */
+        #question::before {
+            content: "問題";
+            background-color: orchid;
+        }
+    </Style>
+</head>
+
+<body>
+    <p>
+        。標題在此。
+    </p>
+
+    <span id="question">回答</span>
+</body>
+
+</html>
